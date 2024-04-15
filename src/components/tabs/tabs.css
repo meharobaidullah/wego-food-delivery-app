@@ -1,0 +1,43 @@
+/* Tabs css */
+ul.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+ul.tabs li {
+  display: block;
+  padding: 10px 24px;
+  color: var(--default);
+  text-decoration: none;
+  border: 1px solid var(--yellow);
+  border-right: none;
+}
+
+ul.tabs li:first-child {
+  border-top-left-radius: var(--default-radius);
+  border-bottom-left-radius: var(--default-radius);
+}
+
+ul.tabs li:last-child {
+  border-right: 1px solid var(--yellow);
+  border-top-right-radius: var(--default-radius);
+  border-bottom-right-radius: var(--default-radius);
+}
+
+ul.tabs li:hover {
+  background-color: rgba(var(--yellowRGB), 0.1);
+  cursor: pointer;
+}
+
+ul.tabs li.active {
+  background-color: var(--yellow);
+  color: var(--default);
+  font-weight: 500;
+}
+
+ul.tabs li.active:hover {
+  background-color: var(--yellow);
+}
