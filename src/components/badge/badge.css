@@ -1,0 +1,20 @@
+.badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 4px 16px;
+  margin-right: 4px;
+  border-radius: var(--default-radius);
+  background-color: var(--background);
+}
+
+.badge-isNew {
+  color: #00ab65;
+}
+
+.badge-starIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}

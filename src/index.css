@@ -51,6 +51,7 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   min-height: 1px; /* Ensure that the column is always visible */
+  box-sizing: border-box;
 }
 
 /* Media queries for responsiveness */
@@ -212,4 +213,16 @@ body {
   .col-xl-12 {
     width: 100%;
   }
+}
+
+.mt-sm {
+  margin-top: 15px;
+}
+
+.mt-md {
+  margin-top: 30px;
+}
+
+.mt-lg {
+  margin-top: 45px;
 }

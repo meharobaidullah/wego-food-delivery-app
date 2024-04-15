@@ -1,0 +1,60 @@
+.card {
+  background-color: var(--white);
+  border-radius: var(--default-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card-promotion {
+  background-color: var(--yellow);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  border-bottom-right-radius: var(--default-radius);
+  min-height: 20px;
+  min-width: 30px;
+}
+
+.card .card-promotion.discount {
+  background-color: #ff686f;
+}
+
+.card .card-promotion.one-plus-one {
+  background-color: #8e63ff;
+}
+
+.card .card-promotion.gift {
+  background-color: #00b1ff;
+}
+
+.card .card-promotion .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
