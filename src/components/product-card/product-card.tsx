@@ -21,7 +21,7 @@ const PromotionTag = ({ type }: { type: string }) => {
   }
 };
 
-const ProductCard = ({ product }: { product: FoodProduct }) => {
+export const ProductCard = ({ product }: { product: FoodProduct }) => {
   return (
     <div className="card">
       <img src={product.imageUrl} alt={product.name} />

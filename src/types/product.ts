@@ -11,3 +11,7 @@ export interface FoodProduct {
   name: string;
   imageUrl: string;
 }
+
+export interface FoodProductResponse {
+  foods: FoodProduct[];
+}
