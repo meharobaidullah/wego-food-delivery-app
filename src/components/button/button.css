@@ -1,11 +1,8 @@
 .button {
   background-color: transparent;
-  /* border: none; */
-  /* color: white; */
   padding: 15px 32px;
   border: 1px solid var(--yellow);
   border-radius: var(--default-radius);
-
   text-decoration: none;
   display: inline-flex;
   justify-content: center;

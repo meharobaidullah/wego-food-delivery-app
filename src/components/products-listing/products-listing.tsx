@@ -32,7 +32,7 @@ export const ProductsListing = ({ products }: { products: FoodProduct[] }) => {
           <div className="col-sm-12 d-flex justify-content-center mt-lg">
             <Button onClick={loadMoreProducts}>
               <PlusIcon className="icon" />
-              Load more
+              Show more
             </Button>
           </div>
         )}
