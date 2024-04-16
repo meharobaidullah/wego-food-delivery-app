@@ -6,8 +6,8 @@ This is a React + TypeScript + Vite template for building a food delivery applic
 
 To run the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/food-delivery-app.git`
-2. Navigate to the project directory: `cd food-delivery-app`
+1. Clone the repository: `git clone https://github.com/meharobaidullah/wego-food-delivery-app.git`
+2. Navigate to the project directory: `cd wego-food-delivery-app`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 5. Open your browser and visit `http://localhost:5173` to see the app running.
