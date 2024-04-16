@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { SearchInput } from '../components/search-input';
 import { Tabs } from '../components/tabs';
-import { ProductCard } from '../components/product-card';
 
 import { FoodProduct } from '../types/product';
 import useCategories from '../hooks/useCategories';
 import useFoodProducts from '../hooks/useFoodProducts';
+import { ProductsListing } from '../components/products-listing';
 
 export const HomePage = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -53,21 +53,15 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div className="row mt-md">
-        {filteredProducts.length > 0 ? (
-          (filteredProducts ?? []).map((product: FoodProduct) => {
-            return (
-              <div key={product.id} className="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-md">
-                <ProductCard product={product} />
-              </div>
-            );
-          })
-        ) : (
+      {filteredProducts.length > 0 ? (
+        <ProductsListing key={`${selectedCategoryId}-${searchValue}`} products={filteredProducts} />
+      ) : (
+        <div className="row">
           <div className="col-lg-12">
             <h3>No result found</h3>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
