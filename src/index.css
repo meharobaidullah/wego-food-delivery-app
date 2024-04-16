@@ -22,7 +22,7 @@
 
 body {
   margin: 0;
-  padding: 20px;
+  padding: 30px 0;
   color-scheme: only light;
   color: var(--default);
   background-color: var(--background);
@@ -226,4 +226,16 @@ body {
 
 .mt-lg {
   margin-top: 45px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
