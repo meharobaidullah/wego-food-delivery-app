@@ -110,35 +110,37 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-4">
-          <SearchInput
-            placeholder="Enter restaurant name..."
-            value={searchValue}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearchInputChange(e.target.value)}
-          />
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4">
+            <SearchInput
+              placeholder="Enter restaurant name..."
+              value={searchValue}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearchInputChange(e.target.value)}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="col-lg-12">
-          <Tabs
-            categories={categories}
-            selectedCategoryId={selectedCategoryId}
-            onCategorySelect={handleCategorySelect}
-          />
+        <div className="row">
+          <div className="col-lg-12">
+            <Tabs
+              categories={categories}
+              selectedCategoryId={selectedCategoryId}
+              onCategorySelect={handleCategorySelect}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="row mt-md">
-        {foodProducts.map((product) => {
-          return (
-            <div key={product.id} className="col-lg-3 mt-md">
-              <ProductCard product={product} />
-            </div>
-          );
-        })}
+        <div className="row mt-md">
+          {foodProducts.map((product) => {
+            return (
+              <div key={product.id} className="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-md">
+                <ProductCard product={product} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -23,10 +23,10 @@
 body {
   margin: 0;
   padding: 20px;
-
   color-scheme: only light;
   color: var(--default);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 /* Container */
@@ -35,6 +35,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 /* Row */
